@@ -3,7 +3,7 @@ import sqlite3
 def tabla():
     try:
         print("HOLA")
-        conexion= sqlite3.connect("C:/Users/mario/Desktop/sqlite3/db")
+        conexion= sqlite3.connect("C:/Users/blackbox/Desktop/sqlite3/db")
         consulta = conexion.cursor()
         sql = """CREATE TABLE db (
             NOMBRE  CHAR(20) NOT NULL,
@@ -27,7 +27,7 @@ def ingresar_datos ():
     APELLIDO=input("ingresa tu apellido")
     EDAD=input("ingresar edad")
 
-    conexion=sqlite3.connect("C:/Users/mario/Desktop/sqlite3/db")
+    conexion=sqlite3.connect("C:/Users/blackbox/Desktop/sqlite3/db")
     consulta=conexion.cursor()
     argumentos=(NOMBRE,APELLIDO,EDAD)
 
